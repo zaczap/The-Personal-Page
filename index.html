@@ -2,22 +2,24 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>N.H.</title>
+	<title>Z.Z.</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta name="robots" content="all" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
 	<meta http-equiv="imagetoolbar" content="false" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->	
 	<style>
 		* { padding: 0; margin: 0; }
-		body { background-color: #333; }
-		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
+		body { background-color: #ecf0f1; }
+		p { color: #2c3e50; font-family: 'Varela', Helvetica; font-size: 16px; line-height: 20px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+		h2 { color: #2c3e50; font-family: 'Varela', Helvetica; font-size: 18px; -webkit-font-smoothing: antialiased; text-transform: uppercase; font-weight:bold;}
+		a { color: #2c3e50; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+		a:hover { color: #990000; border-bottom: 1px solid #2c3e50; }
 		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
 		#about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
 		@media (max-width: 767px) {
@@ -32,14 +34,19 @@
 
 <!-- swap out for a logo -->
 <div id="monogram">
-	<img src="monogram.png" />
+	<img src="logo.png" />
 </div>
 
 <!-- swap out for information about yourself -->
 <div id="about">
-	<p>ZNaz Hamid is the founder and principal of <a href="http://weightshift.com">Weightshift</a>, a design studio in San Francisco and Chicago. Aside from client work, projects include the community-oriented site <a href="http://interhoods.org">Interhoods</a> and mobile web application, <a href="http://sitby.us">SitBy.Us</a>. The two projects codenamed <em>Suplex</em> and <em>Sleeperhold</em> are aiming to be launched in 2011.</p>
-	<p>He writes about design and tangential topics at <a href="http://weightshift.com/memo">Memo</a>, writes in 140 characters at <a href="http://twitter.com/weightshift">Twitter</a>, posts photos to <a href="http://flickr.com/absenter"/>Flickr</a>, creates 400x300px works-in-progress on <a href="http://dribbble.com/weightshift">Dribbble</a>, sometimes makes moving pictures on <a href="http://vimeo.com/weightshift">Vimeo</a>, records items of interest at <a href="http://svpply.com/weightshift">Svpply</a>, listens to all his music on <a href="http://www.rdio.com/people/weightshift/">Rdio</a> and answers the occasional question on <a href="http://www.quora.com/Naz-Hamid">Quora</a>. He also makes music as <a href="http://murdersandmysteries.com">Murders & Mysteries</a> and released an album in 2010.</p>
-	<p>A <a href="http://en.wikipedia.org/wiki/Third_culture_kid">third-culture kid</a>, Naz has lived on three continents and in three countries. He currently lives in San Francisco, California, a place where he feels comfortable in his own skin.</p> 
+	<h2>About</h2>
+	<p>I am a Ph.D. student in the Department of Genetics at Stanford University, studying under Stephen Montgomery. My research is centered on developing approaches to understanding how rare genetic variation influences expression-based phenotypes in different human populations.</p> 
+	<h2>Projects</h2>
+	<p>We recently released a program for annotating personal genomes with pathogenic variants relevant to the recent ACMG recommendation regarding incidental findings (<a href='#'>paper</a>).
+	<h2>EDUCATION & WORK</h2>
+	<p>I studied <strong>Biology</strong> and <strong>Computer Science</strong> at The College of New Jersey with a minor in <strong>Japanese</strong>. Before entering graduate school, I worked as a developer for <a href='#'>Sharp Electronics</a> and <a href='#'>The College of New Jersey</a>.</p>
+	<h2>DETAILS</h2>
+	<p>Email: zappala at stanford dot edu</p>
 </div>
 
 <!--include jquery & backstretch-->
@@ -49,7 +56,7 @@
 $(function(){
      $(window).resize(function(){
          if($(this).width() >= 767){
-             $.backstretch("nh_bg.jpg", {speed: 150});
+             //$.backstretch("bg.jpg", {speed: 150});
          }
       })
       .resize();//trigger resize on page load
